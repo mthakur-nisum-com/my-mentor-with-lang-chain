@@ -1,0 +1,15 @@
+@import './pxToEm';
+
+
+@mixin center {
+    width: pxToEm(980px);
+    margin: 0 auto;
+}
+
+@mixin full-width {
+    width: 100%;
+}
+
+@mixin full-height {
+    width: 100%;
+}

@@ -1,0 +1,36 @@
+@import './utils';
+
+footer {
+   @include center;
+   .class-input-section {
+        width: pxToEm(800px);
+        margin: 0 auto;
+        margin-bottom: pxToEm($xl);
+        .feed-input-section {
+           position: relative;
+           input[type='text'] {
+               width: 100%;
+               height: 70px;
+               border-radius: pxToEm($md);
+               border:pxToEm(1.2px) solid $disabled;
+           }
+           button {
+            position: absolute;
+            right: pxToEm(10px);
+            top: 10%;
+            border: none;
+            padding: pxToEm($lg);
+            font-size: pxToEm($md);
+            text-transform: capitalize;
+            cursor: pointer;
+            background-color: $primaryBlue;
+            border-radius: pxToEm($xl);
+            color: $white;
+            &:active,&:hover {
+               background-color: $hoverPrimaryBlue;
+            }
+           }
+        }
+
+   }
+}

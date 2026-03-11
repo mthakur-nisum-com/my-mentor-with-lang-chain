@@ -1,0 +1,21 @@
+@import './utils';
+
+header {
+    padding: pxToEm($xs) 0;
+    @include center;
+    nav {
+        @include full-height;
+        @include full-width;
+
+        a {
+            margin-right: pxToEm($xs);
+            text-decoration: none;
+            color: $primaryBlue;
+
+            &:hover {
+                text-decoration: underline;
+                color: $hoverPrimaryBlue;
+            }
+        }
+    }
+}

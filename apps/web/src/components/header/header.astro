@@ -1,0 +1,13 @@
+---
+ import { routes,  } from "../../ducks";
+
+const routePaths = Object.keys(routes) as (keyof typeof routes)[];
+---
+
+<header>
+    <nav>
+        {routePaths.map(name =>(
+            <a href={routes?.[name]}>{name.charAt(0).toUpperCase()+name.substring(1)}</a>
+        ))}
+    </nav>
+</header>
